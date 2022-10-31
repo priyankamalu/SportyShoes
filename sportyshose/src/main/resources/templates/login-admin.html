@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert</title>
+</head>
+<body>
+<h2> Login Screen</h2>
+   <form th:action=@{saveadmin} th:object=${admin} method="POST">
+    <input  name="ad" type="text" th:field="*{aname}" placeholder="Enter username">
+    <input type="text" th:field="*{apassword}" placeholder="Enter password">
+    <button type="submit">Login</button>
+     <hr/>
+    
+  
+   </form>
+   
+  
+  
+
+</body>
+</html>

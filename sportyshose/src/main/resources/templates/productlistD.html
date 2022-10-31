@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+     </h1>Choose from given date</h1>
+     <hr/>
+   <form th:action=@{/date1} th:method="get">
+  <select name="date"><option th:each="customer:${customer}" th:text="${customer.date}" th:Value="${customer.date}"></select>
+   <button type="text">show</button>
+    </form>
+     
+</body>
+</html>
